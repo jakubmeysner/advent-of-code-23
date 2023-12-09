@@ -8,7 +8,7 @@ object HauntedWasteland {
         val instructions = lines[0].toCharArray()
 
         val connections = lines
-            .subList(2, lines.lastIndex)
+            .subList(2, lines.size)
             .associate {
                 Pair(
                     it.substring(0, it.indexOf(' ')),
